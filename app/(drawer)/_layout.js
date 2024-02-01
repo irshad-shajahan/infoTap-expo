@@ -16,13 +16,13 @@ const CustomDrawerContent = (props) => {
   const {user,setUser,setToken} = useAuth()
 
   function logOut(){
-    console.log('logout')
+    setToken(null)
+    setUser(null)
     }
 
   useEffect(() => {
     console.log(pathname);
   }, [pathname]);
-  console.log(user)
   return (
     <DrawerContentScrollView {...props}>
       <View style={styles.userInfoWrapper}>

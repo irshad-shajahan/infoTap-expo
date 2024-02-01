@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseURL='http://192.168.29.240:8080/api'
+const baseURL='http://192.168.29.239:8080/api'
 export default  axios.create({
     baseURL,
     withCredentials:true
@@ -11,5 +11,4 @@ export default  axios.create({
 //     baseURL: 'http://localhost:8000',
 //     headers: { 'Content-Type': 'application/json' },
 //     withCredentials:true
-    
 // })

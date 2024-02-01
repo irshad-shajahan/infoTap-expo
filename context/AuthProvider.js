@@ -55,7 +55,9 @@ export function AuthProvider({ children }) {
     const saveUserData = async () => {
       try {
         await AsyncStorage.setItem("user", JSON.stringify(user));
-        await AsyncStorage.setItem("token",token?token:'');
+        if(token){
+          await AsyncStorage.setItem("token",token);
+        }
       } catch (error) {
         console.error("Error saving user data to AsyncStorage:", error);
       }
