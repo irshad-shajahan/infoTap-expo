@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "expo-router-learn",
+    "name": "info-tap",
     "slug": "expo-router-learn",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -23,7 +23,30 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.info.tap"
+      "package": "com.info.tap",
+      "permissions": [],
+      "config": {
+        "buildConfigField": [
+          "String",
+          "MYAPP_UPLOAD_STORE_FILE",
+          "\"my-upload-key.keystore\""
+        ],
+        "buildConfigField": [
+          "String",
+          "MYAPP_UPLOAD_KEY_ALIAS",
+          "\"my-key-alias\""
+        ],
+        "buildConfigField": [
+          "String",
+          "MYAPP_UPLOAD_STORE_PASSWORD",
+          "\"Shajahan@123\""
+        ],
+        "buildConfigField": [
+          "String",
+          "MYAPP_UPLOAD_KEY_PASSWORD",
+          "\"Shajahan@123\""
+        ]
+      }
     },
     "web": {
       "bundler": "metro",
@@ -39,7 +62,8 @@
             "./assets/fonts/digital-7.ttf"
           ]
         }
-      ]
+      ],
+      "expo-build-properties"
     ],
     "experiments": {
       "typedRoutes": true
